@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logo-page</title>
+
+    
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     
+    <link rel='stylesheet' href='./css/chat.css'>
+    
+</head>
+<body>
+   <!-- 登陆页面 -->
+  <div id='login-page'> 
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-4 col-md-push-4'  >
+                <div id='logo'></div>
+                <div id='logo-footer'>
+                    <span>用户登录</sapn>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='col-md-4 col-md-push-4'>
+            <input type='text' id='input-account' placeholder='亲，请输入你的大名'>
+            <input type='password' id='input-password'  placeholder='记得密码吗？'>
+            <div id='input-btn'>
+                <btn class='btn btn-info' id='btn-first' data-target='#my-modal' data-toggle='modal'>选择头像</btn>
+                <btn class='btn btn-info' id='btn-two'>登录</btn>
+            </div>
+
+            <div id='show'><img src='./img/logouser1.png' id='user-logo'></div>
+        </div>
+    </div> 
+
+    <!-- 模态 -->
+    <div class='modal fade' id='my-modal' tabindex=-1 aria-hidden="true">
+        <div class='modal-content'  >
+                <div class='modal-header' style='text-align:center'>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>选一个喜欢的吧！</h3>
+                </div>
+                <div class="modal-body" style='padding:50px'>
+                    <div id='modal-img'> 
+                        <img src='./img/user1.jpg'>
+                        <img src='./img/user2.jpg'>
+                        <img src='./img/user3.jpg'>
+                        <img src='./img/user4.jpg'>
+                        <img src='./img/user5.jpg'>
+                        <img src='./img/user6.jpg'>
+                        <img src='./img/user7.jpg'>
+                        <img src='./img/user8.jpg'>
+                        <img src='./img/user9.jpg'>
+                        <img src='./img/user10.jpg'>
+                        <img src='./img/user11.jpg'>
+                        <img src='./img/user12.jpg'>
+                        <img src='./img/user13.jpg'>
+                        <img src='./img/user14.jpg'>
+                         
+                    </div>
+                </div>
+            </div>
+     </div>
+   </div>
+
+       <!-- 对话框界面 -->
+    <div id='chat-page'> 
+        <header>
+          <div id='head'>House Chat</div>
+        </header>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-12' id='content'>
+                    
+                </div>
+            </div>
+        </div>
+        <footer>
+            <form action="#">  
+                <input id="msg" autocomplete="off" placeholder='想要说点什么'/><button id='sendBtn'>Send</button>
+            </form>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/js-xss/0.3.3/xss.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.1.1/socket.io.js"></script>
+    <script src='./js/chat.js'></script>
+   
+     
+
+    
+
+
+</body>
+
+</html>

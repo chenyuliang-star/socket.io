@@ -1,0 +1,238 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+#login-page {
+    background:url('../img/background-page.jpg');
+    background-size:100% 100%;
+    overflow-x:hidden;
+}
+#logo{
+    width: 80%;
+    height: 280px;
+    background: url("../img/logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+
+#logo-footer{
+    width:100%;
+    height:50px;
+    text-align:center;
+}
+#logo-footer span{ 
+    font-size:2.8rem;
+}
+#input-account {
+    width:100%;
+    height:4rem;
+    border-radius:4%;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+ 
+}
+
+#input-password{
+    width:100%;
+    height:4rem;
+    border-radius:4%;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+}
+
+#input-btn {
+    width:100%;
+    margin-top:20px;
+}
+
+#btn-first{
+    width:40%;
+    text-align:center;
+    float:left;
+}
+#btn-two{
+    width:40%;
+    text-align:center;
+    float:right;
+}
+#input-btn:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+#show{
+    width:100%;
+    text-align:center;
+    height:100px;
+    
+    margin-top:10px;
+}
+#show img{
+    width:100px;
+    height:100px;
+}
+
+
+/* 模态 */
+ 
+#modal-img{
+    text-align:center;
+}
+#modal-img  img{
+    width:200px;
+    height:200px;
+    cursor:pointer;
+    transition:all 1s;
+}
+#modal-img  img:hover{
+    transform: scale(1.4);
+    border:2px solid #0080ff; 
+}
+
+ 
+
+
+
+/* ....................................... */
+
+
+
+
+
+
+#chat-page{
+    display:none;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+
+
+#head{
+    width:100%;
+    height:60px;
+    background-color:#337ab7;
+    text-align:center;
+    font-size:3.5rem;
+    line-height:60px;
+    color:white;
+    position:fixed;
+    top:0%;
+}
+
+#content{
+    margin-top:60px;
+    text-align:center;
+
+}
+
+form { 
+    background: gray; 
+    padding: 3px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    padding-left:50px;
+}
+form input { 
+    border: 0; 
+    padding: 10px; 
+ 
+    width: 80%; 
+    margin-right: .5%; 
+}
+form button { 
+    width: 18%; 
+    background: #3385ff; 
+    border: none; padding: 10px; 
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+    border-radius:5px;
+}
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+  
+}
+#messages li { 
+    padding: 5px 10px; 
+    font-size:2.5rem;
+    border-radius:5px;
+    text-align:center;
+    width:40%;
+
+}
+#messages li:nth-child(odd) { 
+    background: #69a71e; 
+}
+#messages li:nth-child(even) { 
+    background: #dbdcdd;
+}
+
+
+
+
+/* ............................. */
+
+.system-upgrade {
+    width:30%;
+    padding: 5px 10px;
+    background: #999;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px auto;
+}
+#wrap-left{
+    width:35%;
+    display:flex;
+    margin-right:65%;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.item-left{
+    text-align:center;
+    background-color: #269abc;
+    width:80%;
+    padding:10px;
+    border-radius:5px;
+     
+}
+#wrap-right{
+    width:35%;
+    display:flex;
+    margin-left:65%;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.item-right{
+    text-align:center;
+    background-color: #69a71e;
+    width:80%;
+    padding:10px;
+    border-radius:5px;
+   
+}
+
+.item-img{
+    width:20%;
+    text-align:center;
+}
+ 
+#item-font{
+    font-size:1.5rem;
+    color:white;
+}
+
+#target-img{
+    width:25px;
+    height:25px;
+}
